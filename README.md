@@ -1,7 +1,8 @@
 cplex-example
 -------------
 
-An example of using [CPLEX](https://www.ibm.com/analytics/data-science/prescriptive-analytics/cplex-optimizer)
+An example of using [CPLEX](https://www.ibm.com/analytics/data-science/prescriptive-analytics/cplex-optimizer) and
+[Google Test](https://github.com/google/googletest/tree/master/googletest) to run MIP experiments from C++.
 
 ## Instructions
 
@@ -17,3 +18,4 @@ An example of using [CPLEX](https://www.ibm.com/analytics/data-science/prescript
    using functions in `src/CMakeLists.txt`. Build and run these in the `build` directory
    using `make <target name>`.
 1. You can run all the experiments using `make test` I think.
+1. You can probably put your own information in `README.md`
