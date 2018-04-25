@@ -30,8 +30,6 @@ set(GTEST_ROOT ${PROJECT_SOURCE_DIR}/gtest)
 find_package(GTest REQUIRED)
 include(GoogleTest)
 
-add_custom_target(experiments)
-
 # Experiment Executables: add_experiment(NAME Sources...) adds an experiment
 function(add_experiment NAME)
     add_executable(${NAME} ${ARGN})
@@ -43,9 +41,6 @@ function(add_experiment NAME)
     target_include_directories(${NAME} PRIVATE ${GTEST_INCLUDE_DIRS})
     add_dependencies(${NAME} GTest::GTest GTest::Main)
     gtest_discover_tests(${NAME})
-
-    # Add to experiments
-    add_dependency(experiments ${NAME})
 endfunction()
 
 add_subdirectory(src)

@@ -14,4 +14,6 @@ An example of using [CPLEX](https://www.ibm.com/analytics/data-science/prescript
 1. Run `cmake --build ../<this directory> -DCPLEX_STUDIO_DIR=<cplex install path> -DCPLEX_SYSTEM=<system>`
    where `<system>` is `x86-64_linux` for Linux and `x86-64_osx` for Mac.
 1. You're done with setup. Develop in this directory, add experiments/libraries
-   using functions in `src/CMakeLists.txt`. Build and run these in the `build` directory using `make <target name>`.
+   using functions in `src/CMakeLists.txt`. Build and run these in the `build` directory
+   using `make <target name>`.
+1. You can run all the experiments using `make test` I think.
